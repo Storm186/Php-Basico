@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" href="login-styles.css">
+	<title>Log In</title>
+</head>
+<body>
+	<header>
+		
+		<nav>
+			<li><a href="C:/xampp/htdocs/Web-Page/index.html">Inicio</a></li>
+			<li><a href="C:/xampp/htdocs/Web-Page/Galery/galery.html">Galeria</a></li>
+			<li><a href="login.html">Login</a></li>
+			<li><a href="Singin.html">Sign in</a></li>
+		</nav>
+
+	</header>
+		<img src="img/Logos-png/nice2.png" alt="">
+	<div class="login-box">
+		<h1>Login</h1>
+		<form name="formulario" id="form" action="" onsubmit="return validar()" method="">
+			<div class="form-a">
+				<p id="err_msg">Missing Information:</p>
+				<br>
+				<label id="btn-g" for="">Email</label>
+				<br>
+				<input  name="email" id="email" type="email" placeholder="Write Email">
+				<label for="">Password</label>
+				<br>
+				<input  name="clave" id="clave" type="password" placeholder="Password">
+			</div>
+			<button type="submit" class="btn btn-principal" onclick="validar()">Enviar</button>
+		</form>
+	</div>
+	<script src="validar.js"></script>
+	<script type="text/javascript">
+		function validar(){
+      		x = document.getElementById('clave').value;
+      		y = document.getElementById('email').value;
+      		if (x == '' || y == '' /*null || x.length == 0 || /^\s+$/.test(x)*/) {
+				alert("Wrong credencial");
+      			document.formulario.email.focus()
+      			return false;
+      			exit();
+      		}
+      		else{
+      			alert("Working...")
+      		}
+      		/*if(x == '' || y == ''){
+
+      			document.getElementById('err_msg').style.display="block";
+      			document.getElementByClassName('login-box').style.border="red";
+      		}
+      		if ( y == null || y.length == 0 || /^\s+$/.test(y)) {
+      			document.getElementById('err_msg');
+      			return false;
+      			exit();
+      		}*/
+			
+		}
+	</script>
+</body>
+</html>

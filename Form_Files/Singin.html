@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="singin-styles.css">
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.4/examples/sign-in/">
+    <!-- Bootstrap core CSS -->
+	<link href="/docs/4.4/dist/css/bootstrap.min.css" rel="stylesheet" >
+    <!-- Favicons -->
+	<link rel="icon" href="img/Logos-png/nice2.png" sizes="16x16" type="image/png">
+	<meta name="theme-color" content="#563d7c">
+    <!-- Custom styles for this template -->
+    <link href="singin-styles.css" rel="stylesheet">
+	<title>Registrarse</title>
+</head>
+<body>
+	<header>
+		
+		<nav>
+			<li><a href="C:/xampp/htdocs/Web-Page/index.html">Inicio</a></li>
+			<li><a href="C:/xampp/htdocs/Web-Page/Galery/galery.html">Galeria</a></li>
+			<li><a href="login.html">Login</a></li>
+			<li><a href="Singin.html">Sign in</a></li>
+		</nav>
+
+	</header>
+	<br>
+	<div class="form-sect">
+	<form class="form-signin" action="php/registrar.php" method="post">
+  		<img class="mb-4" src="img/Logos-png/Html5-1.png" alt="" width="72" height="72">
+  		<h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
+		
+		<label for="">Nombre</label>
+		<input type="text" id="inputName" class="form-control" name="nombre" placeholder="Nombre" required autofocus>
+
+		<label for="">Apellido</label>
+		<input type="text" id="inputLastname" class="form-control" name="apellido" placeholder="Apellido" required autofocus>
+
+  		<label for="" >Email address</label>
+  		<input type="email" id="inputEmail" class="form-control" name="email" placeholder="Direccion Email" required autofocus>
+  		
+  		<label for="" >Password</label>
+  		<input type="password" id="inputPassword" class="form-control" name="password" placeholder="Password" required>
+  		
+		<label for="">Telefono</label>
+		<input type="phone" id="inputPhone" class="form-control" name="numero" placeholder="Ingrese su numero de Tlf" required>
+  		<div class="checkbox mb-3">
+    	<label>
+      	<input type="checkbox" value="remember-me"> Remember me
+    	</label>
+  		</div>
+
+
+  		<button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+  		<p class="mt-5 mb-3 text-muted">&copy; 2017-2019</p>
+	</form>
+	</div>
+</body>
+</html>

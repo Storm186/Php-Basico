@@ -1,0 +1,161 @@
+@import'https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css';
+body{
+	margin: 0;
+	padding: 0;
+	height: 450px;
+	width: 100%;
+	font-family: sans-serif;
+	background-image: url(img/city-dark-china.jpg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+/*CABECERA DE LA PAGINA-CONTENEDOR DE LA BARRA DE ENLACES*/
+header{
+	width: 100%;
+	height: 15vh;
+	margin: 0;
+	padding: 0;
+}
+/*CABECERA DE LA PAGINA-CONTENEDOR DE LA BARRA DE ENLACES*/
+
+/*BARRA DE ENLACES*/
+nav{
+	width: 100%;
+	height: 80%;
+	background: #333;
+	margin: 0;
+	padding: 0;
+	display: inline-flex;
+}
+nav li{
+	list-style: none;
+	margin-top: 20px;
+}
+nav li a{
+	text-decoration: none;
+	text-decoration-line: none;
+	color: #fff;
+	margin: 10px;
+	padding: 10px;
+	font-family: sans-serif;
+	font-size: 19px;
+	transition: .3s;
+}
+nav li a:hover{
+	background: #FFF;
+	color: #000;
+	transition: .3s;	
+	border-radius: 2px;
+	text-decoration: none;
+	text-decoration-line: none;
+}
+/*BARRA DE ENLACES*/
+
+/*fORMULARIO*/
+/*#4caf50*/
+.login-box{
+	width: 50%;
+	height: 80%;
+	border: 1px solid white; 
+	margin: 0 auto;
+	margin-top: 20px;
+}
+.login-box form{
+	width: 100%;
+	height: 80%;
+}
+img{
+	width: 100px;
+	height: 50px;
+	margin: 0;
+	margin-left: 48%;
+}
+.login-box h1{
+	width: 20%;
+	color: white;
+	font-family: sans-serif;
+	border-bottom: 4px solid #4caf50;
+	margin-left: 20px;
+}
+.form-a{
+	width: 100%;
+	height: 50%;
+	display: block;
+}
+.login-box .form-a label{
+	margin-left: 40px;
+	margin-top: 10px;
+	padding: 5px;
+	width: 80%;
+	color: white;
+	font-size: 19px;
+	font-family: sans-serif;
+	font-weight: 600;
+}
+form .form-a input{
+	font-size: 15px;
+	width: 80%;
+	height: 20px;
+	padding: 7px;
+	margin: 0 auto;
+	margin-left: 50px;
+	/*/opacity: .6;/*/
+	color:  white;
+	text-decoration-color: white;
+	border: 2px solid #4caf50;
+	border-radius: 2px;
+}
+form input:focus{
+	border: 2px solid #4caf50;
+	color: white;
+}
+button{
+	margin: 0 auto;
+	margin-top: 20px;
+	display: block;
+	margin-top: 40px;
+}
+.btn{
+	width: 60%;
+	background: transparent;
+	border: 3px solid #4caf50;
+	font-size: 19px;
+	font-family: sans-serif; 
+	padding: 10px;
+	color: white;
+	transition: .3s;
+}
+.btn:hover{
+	background-color: #4caf50;
+	color: white;
+	transition: .3s;
+	cursor: pointer;
+	border: 3px solid white;
+	border-radius: 3px;
+}
+/*fORMULARIO*/
+
+
+
+
+
+
+
+#err_msg{
+	width: 80%;
+	display: none;
+	background: #ff9d76/*f64b3c*/;
+	color: #fa163f;
+	letter-spacing: 3px;
+	font-family: sans-serif;
+	font-size: 15px;
+	font-weight: 700;
+	padding: 5px;
+	border: 1px solid #c72c41;
+	margin-left: 5px;
+	margin-right: 5px;
+	margin-bottom: 0;
+}
